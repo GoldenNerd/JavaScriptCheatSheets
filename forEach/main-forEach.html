@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../globalStyleSheet.css" />
+    <title>Cheat Sheets</title>
+  </head>
+  <body>
+    <h2>ARRAY METHODS:</h2>
+    <!--    -->
+
+    <h4>
+      <a href="Example_forEach1.html">Example: forEach() variant 1</a>
+    </h4>
+    <textarea name="" id="" cols="60" rows="6">
+  myArray.forEach(callbackFunction);
+  function callbackFunction(item, index, myArray) {
+  "function body here";
+  return "result";
+  };
+</textarea
+    >
+    <!--    -->
+
+    <h4>
+      <a href="Example_forEach2.html">Example: forEach() variant 2</a>
+    </h4>
+    <textarea name="" id="" cols="60" rows="10">
+  var fruits = ["apple", "orange", "cherry"];
+  let myFunction = (aFruit) => {
+    const txt = aFruit;
+    const ol = document.getElementById("ul-tag");
+    let li = document.createElement("li");
+    li.textContent = txt;
+    ol.appendChild(li)
+  };
+  fruits.forEach(myFunction);
+</textarea
+    >
+    <!--    -->
+
+    <h4>
+      <a href="Example_forEach3.html">Example: forEach() variant 3</a>
+    </h4>
+    <textarea name="" id="" cols="60" rows="9">
+  var fruits = ["apple", "orange", "cherry"];
+  fruits.forEach((aFruit) => {
+    const txt = aFruit;
+    const ol = document.getElementById("ul-tag");
+    let li = document.createElement("li");
+    li.textContent = txt;
+    ol.appendChild(li)
+    });
+</textarea
+    >
+  </body>
+</html>

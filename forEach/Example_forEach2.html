@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../globalStyleSheet.css" />
+    <script src="Example_forEach2.js" defer></script>
+    <title>Variant 2: forEach array method</title>
+  </head>
+  <body>
+    <h2><pre>Array method:  forEach()</pre></h2>
+    <!-- ACTUAL CODE FOR RUNNIBG EXAMPLE: -->
+    <div style="height: 6em">
+      <button id="run-method-btn"><b>TEST "forEach()" array method</b></button
+      ><button id="reload" style="margin: 0 0.5em"><b>RESET</b></button>
+      <p>Display the fruits array as a numbered list.</p>
+      <ol id="ul-tag"></ol>
+    </div>
+    <hr />
+    <!--  -->
+    <h4>HTML5 code</h4>
+    <textarea cols="65" rows="5">
+    <button id="run-method-btn">
+      Test for 'forEach()' array method
+    </button>
+    <ol id="ul-tag"></ol>
+    </textarea>
+    <!--  -->
+    <h4>JavaScript code; variant 2</h4>
+    <textarea cols="65" rows="15">
+    function runMethod() {
+      var fruits = ["apple", "orange", "cherry"];
+      let myFunction = (aFruit) => {
+        const txt = aFruit;
+        const ol = document.getElementById("ul-tag");
+        let li = document.createElement("li");
+        li.textContent = txt;
+        ol.appendChild(li)
+      };
+      fruits.forEach(myFunction);
+    };
+    const runExample = document.getElementById("run-method-btn");
+    runExample.addEventListener("click", runMethod);</textarea
+    >
+  </body>
+</html>
