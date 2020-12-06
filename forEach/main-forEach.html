@@ -13,12 +13,18 @@
     <h4>
       <a href="Example_forEach1.html">Example: forEach() variant 1</a>
     </h4>
-    <textarea name="" id="" cols="60" rows="6">
-  myArray.forEach(callbackFunction);
-  function callbackFunction(item, index, myArray) {
-  "function body here";
-  return "result";
-  };
+    <textarea name="" id="" cols="60" rows="12">
+      "use strict" 
+      function runMethod() { 
+        var fruits = ["apple", "orange", "cherry"]; 
+        fruits.forEach(myFunction); 
+        function myFunction(aFruit) { 
+          const txt = aFruit; 
+          const ol = document.getElementById("ul-tag"); 
+          let li = document.createElement("li"); 
+          li.textContent = txt; 
+          ol.appendChild(li)
+      }};
 </textarea
     >
     <!--    -->
